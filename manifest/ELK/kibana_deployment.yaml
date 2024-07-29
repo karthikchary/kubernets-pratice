@@ -30,7 +30,9 @@ metadata:
 spec:
   selector:
     app: kibana
+  type: NodePort  
   ports:
     - protocol: TCP
       port: 5601
       targetPort: 5601
+      nodePort: 32056
